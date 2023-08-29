@@ -10,7 +10,7 @@ const app: Express = express();
 app.use(express.json());
 
 app.use("/api/carvalue", carValueRoutes);
-app.use("/api/riskrating2", riskRatingRoutes2);
+// app.use("/api/riskrating2", riskRatingRoutes2);
 app.use("/api/riskrating", riskRoutes);
 app.use("/api/premiumquote", quoteRoutes);
 
