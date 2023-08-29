@@ -35,8 +35,8 @@ jobs:
 
       - name: Merge Feature into Develop
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "Waterclone"
+          git config user.email "jene@missionreadyhq.com"
           git checkout Develop
           git merge --no-ff ${{ github.event.after }} -m "Merge branch 'Feature' into Develop"
           git push origin Develop
