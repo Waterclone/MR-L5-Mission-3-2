@@ -1,4 +1,4 @@
-name: Feature to Develop to Push
+name: Feature to Develop
 
 on:
   push:
