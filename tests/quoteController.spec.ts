@@ -1,3 +1,4 @@
+import { describe, it, expect } from "@jest/globals";
 import { calculateQuote } from "../src/services/quoteServices";
 
 describe("premium quote tests", () => {

@@ -1,3 +1,4 @@
+import { describe, it, expect } from "@jest/globals";
 import { calculateRiskRating } from "../src/services/riskServices";
 
 describe("risk rating tests", () => {

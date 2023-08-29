@@ -1,8 +1,8 @@
-import { calculateCarValue } from '../src/services/carValueServices';
-
+import { describe, it, expect } from "@jest/globals";
+import { calculateCarValue } from "../src/services/carValueServices";
 
 describe('Convert car model and year to a "Car Value"', () => {
-  it('should calculate car value for valid input', () => {
+  it("should calculate car value for valid input", () => {
     // Arrange
     const model = "Civic";
     const year = 2014;
@@ -15,7 +15,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toBe(expected);
   });
 
-  it('should calculate car value for model with space', () => {
+  it("should calculate car value for model with space", () => {
     // Arrange
     const model = "Ford Mustang";
     const year = 2021;
@@ -28,7 +28,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toBe(expected);
   });
 
-  it('should calculate car value for model with symbols', () => {
+  it("should calculate car value for model with symbols", () => {
     // Arrange
     const model = "CX-8";
     const year = 2020;
@@ -41,7 +41,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toBe(expected);
   });
 
-  it('should calculate car value for model name with number', () => {
+  it("should calculate car value for model name with number", () => {
     // Arrange
     const model = "Toyota 86";
     const year = 2010;
@@ -54,7 +54,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toBe(expected);
   });
 
-  it('should return error for empty model name', () => {
+  it("should return error for empty model name", () => {
     // Arrange
     const model = "";
     const year = 2022;
@@ -80,7 +80,7 @@ describe('Convert car model and year to a "Car Value"', () => {
   //   expect(result).toEqual(errorExpected);
   // });
 
-  it('should return error for future year', () => {
+  it("should return error for future year", () => {
     // Arrange
     const model = "Camry";
     const year = 2025;
@@ -93,7 +93,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toEqual(errorExpected);
   });
 
-  it('should return error for older year less than 2000', () => {
+  it("should return error for older year less than 2000", () => {
     // Arrange
     const model = "Accord";
     const year = 1995;
@@ -106,7 +106,7 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toEqual(errorExpected);
   });
 
-  it('should return error for negative year', () => {
+  it("should return error for negative year", () => {
     // Arrange
     const model = "Impreza";
     const year = -555;
@@ -132,4 +132,3 @@ describe('Convert car model and year to a "Car Value"', () => {
   //   expect(result).toEqual(errorExpected);
   // });
 });
-

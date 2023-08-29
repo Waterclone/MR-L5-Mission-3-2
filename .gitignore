@@ -1,0 +1,10 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled TypeScript files
+dist/
+coverage/
+
+# Ignore any environment-specific configuration files
+.env
+.env.*
