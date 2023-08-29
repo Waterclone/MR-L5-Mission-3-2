@@ -2,8 +2,7 @@ name: Feature to Develop
 
 on:
   push:
-    branches:
-      - feature
+    branches: [feature]
 
 jobs:
   build-and-test:
