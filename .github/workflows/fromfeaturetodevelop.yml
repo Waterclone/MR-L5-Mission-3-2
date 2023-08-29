@@ -37,6 +37,7 @@ jobs:
         run: |
           git config user.name "Waterclone"
           git config user.email "jene@missionreadyhq.com"
-          git checkout Develop
-          git merge --no-ff ${{ github.event.after }} -m "Merge branch 'Feature' into Develop"
-          git push origin Develop
+          git checkout develop  # Use lowercase 'develop'
+          git merge --no-ff ${{ github.sha }} -m "Merge branch 'feature' into develop"
+          git push origin develop  # Use lowercase 'develop'
+
