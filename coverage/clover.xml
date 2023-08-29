@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693337316557" clover="3.2.0">
-  <project timestamp="1693337316557" name="All files">
+<coverage generated="1693341184859" clover="3.2.0">
+  <project timestamp="1693341184859" name="All files">
     <metrics statements="43" coveredstatements="37" conditionals="30" coveredconditionals="24" methods="5" coveredmethods="5" elements="78" coveredelements="66" complexity="0" loc="43" ncloc="43" packages="1" files="3" classes="3"/>
-    <file name="carValueServices.ts" path="/Users/jimson/Desktop/Final_m3/MR-L5-Mission-3-2/src/services/carValueServices.ts">
+    <file name="carValueServices.ts" path="/Users/jenehamahona/Documents/Mission Ready/Level 5/Mission 3/MR-L5-Mission3-2/Server/src/services/carValueServices.ts">
       <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="8" type="stmt"/>
@@ -18,7 +18,7 @@
       <line num="20" count="4" type="stmt"/>
       <line num="21" count="4" type="stmt"/>
     </file>
-    <file name="quoteServices.ts" path="/Users/jimson/Desktop/Final_m3/MR-L5-Mission-3-2/src/services/quoteServices.ts">
+    <file name="quoteServices.ts" path="/Users/jenehamahona/Documents/Mission Ready/Level 5/Mission 3/MR-L5-Mission3-2/Server/src/services/quoteServices.ts">
       <metrics statements="15" coveredstatements="15" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="12" type="cond" truecount="4" falsecount="0"/>
@@ -36,7 +36,7 @@
       <line num="26" count="4" type="stmt"/>
       <line num="28" count="4" type="stmt"/>
     </file>
-    <file name="riskServices.ts" path="/Users/jimson/Desktop/Final_m3/MR-L5-Mission-3-2/src/services/riskServices.ts">
+    <file name="riskServices.ts" path="/Users/jenehamahona/Documents/Mission Ready/Level 5/Mission 3/MR-L5-Mission3-2/Server/src/services/riskServices.ts">
       <metrics statements="15" coveredstatements="9" conditionals="12" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="cond" truecount="3" falsecount="1"/>
