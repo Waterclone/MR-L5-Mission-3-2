@@ -22,8 +22,8 @@ jobs:
 
       - name: Build and Test
         run: |
-          npm run build
-          npm test
+          npm run build --if-present
+          npm run test --if-present
 
   merge-and-push:
     runs-on: ubuntu-latest
