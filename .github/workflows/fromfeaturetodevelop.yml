@@ -2,7 +2,8 @@ name: Feature to Develop to Push
 
 on:
   push:
-    branches: [feature]
+    branches:
+      - feature
 
 jobs:
   build-and-test:
@@ -38,5 +39,5 @@ jobs:
           git config user.name "Waterclone"
           git config user.email "jene@missionreadyhq.com"
           git checkout develop
+          git merge --no-ff ${{ github.event.before }}
           git push origin develop
-
