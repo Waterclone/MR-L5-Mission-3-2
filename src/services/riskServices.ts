@@ -1,5 +1,9 @@
 export const calculateRiskRating = (claim_history: string) => {
-  if (!claim_history || claim_history.trim() === "") {
+  if (/^\d+$/.test(claim_history.trim())) {
+    return { error: "Invalid value or missing claim history" };
+  } else if (!claim_history || claim_history.trim() === "") {
+    return { error: "Invalid value or missing claim history" };
+  } else if (claim_history.indexOf(" ") === -1) {
     return { error: "Invalid value or missing claim history" };
   } else {
     const keywords = ["collide", "crash", "scratch", "bump", "smash"];
