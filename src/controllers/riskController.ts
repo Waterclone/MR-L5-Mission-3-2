@@ -39,6 +39,6 @@ export const getRisk = (req: RiskRequest, res: Response) => {
     }
   } catch (error) {
     console.error("An error occurred:", error);
-    res.status(500).send({ error: "An error occurred while processing this request." });
+    res.status(500).send({ error: "An error occurred while processing your request." });
   }
 };
