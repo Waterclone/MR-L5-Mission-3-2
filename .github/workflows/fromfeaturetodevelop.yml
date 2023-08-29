@@ -34,10 +34,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Merge Feature into Develop
+      - name: Create and Checkout Develop Branch
         run: |
           git config user.name "Waterclone"
           git config user.email "jene@missionreadyhq.com"
-          git checkout develop
+          git checkout -b develop
+          git push origin develop
+
+      - name: Merge Feature into Develop
+        run: |
           git merge --no-ff ${{ github.event.before }}
           git push origin develop
