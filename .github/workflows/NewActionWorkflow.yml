@@ -49,13 +49,13 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App Test (L5-M3-Test)'
-        id: deploy-to-webapp
+        id: deploy-to-webapp-test
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'L5-M3-Test'
           slot-name: 'Test'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8E171E9ED47D41E49585227E738F3014 }}
-          package: .
+          package: ./dist
 
   deploy-to-production:
     runs-on: ubuntu-latest
@@ -72,10 +72,10 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App Production (L5-M3-2)'
-        id: deploy-to-webapp
+        id: deploy-to-webapp-production
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'L5-M3-2'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0694010A467345BC83A7673AB4B541DA }}
-          package: .
+          package: ./dist
