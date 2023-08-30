@@ -9,6 +9,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: L5-M3-Test
+  AZURE_WEBAPP_NAME2: L5-M3-2
   AZURE_WEBAPP_PACKAGE_PATH: '.'
   NODE_VERSION: '16.x'
 
@@ -76,6 +77,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@85270a1854658d167ab239bce43949edb336fa7c
         with:
-          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          app-name: ${{ env.AZURE_WEBAPP_NAME2 }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
