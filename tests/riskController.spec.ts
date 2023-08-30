@@ -16,7 +16,7 @@ describe("risk rating tests", () => {
 
   it("should return risk rating of 2 when two words identified.", () => {
     // Arrange
-    const claim_history = "My only claim was a crash into my house's garage door that left a scratch on my car.";
+    const claim_history = "My only claim is a crash into my house's garage door that left a scratch on my car.";
     const expected = { riskRating: 2 };
 
     // Act
