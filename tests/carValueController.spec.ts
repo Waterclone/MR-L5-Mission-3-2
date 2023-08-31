@@ -1,7 +1,7 @@
 import { describe, it, expect } from "@jest/globals";
 import { calculateCarValue } from "../src/services/carValueServices";
 
-// describe('Convert car model and year to a "Car Value"', () => {
+describe('Convert car model and year to a "Car Value"', () => {
 //   it("should calculate car value for valid input", () => {
 //     // Arrange
 //     const model = "Civic";
