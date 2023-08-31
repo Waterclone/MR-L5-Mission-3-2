@@ -2,18 +2,18 @@ import { describe, it, expect } from "@jest/globals";
 import { calculateCarValue } from "../src/services/carValueServices";
 
 describe('Convert car model and year to a "Car Value"', () => {
-//   it("should calculate car value for valid input", () => {
-//     // Arrange
-//     const model = "Civic";
-//     const year = 2014;
-//     const expected = 6614;
+  it("should calculate car value for valid input", () => {
+    // Arrange
+    const model = "Civic";
+    const year = 2014;
+    const expected = 6614;
 
-//     // Act
-//     const result = calculateCarValue(model, year);
+    // Act
+    const result = calculateCarValue(model, year);
 
-//     // Assert
-//     expect(result).toBe(expected);
-//   });
+    // Assert
+    expect(result).toBe(expected);
+  });
 
   it("should calculate car value for model with space", () => {
     // Arrange
