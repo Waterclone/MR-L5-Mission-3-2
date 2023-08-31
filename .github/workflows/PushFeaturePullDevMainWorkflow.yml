@@ -2,10 +2,6 @@ on:
   push:
     branches:
       - feature
-  pull_request:
-    branches: 
-      - main
-      - develop
 
 env:
   NODE_VERSION: '16.x'
