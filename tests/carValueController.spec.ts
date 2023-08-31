@@ -67,18 +67,18 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toEqual(errorExpected);
   });
 
-  // it('should return error for empty year', () => {
-  //   // Arrange
-  //   const model = "Prius";
-  //   const year = "";
-  //   const errorExpected = { error: "Model and year are required" };
+  it('should return error for empty year', () => {
+    // Arrange
+    const model = "Prius";
+    const year = "";
+    const errorExpected = { error: "Model and year are required" };
 
-  //   // Act
-  //   const result = calculateCarValue(model, year);
+    // Act
+    const result = calculateCarValue(model, year);
 
-  //   // Assert
-  //   expect(result).toEqual(errorExpected);
-  // });
+    // Assert
+    expect(result).toEqual(errorExpected);
+  });
 
   it("should return error for future year", () => {
     // Arrange
@@ -119,16 +119,16 @@ describe('Convert car model and year to a "Car Value"', () => {
     expect(result).toEqual(errorExpected);
   });
 
-  // it('should return error for wrong data type for year', () => {
-  //   // Arrange
-  //   const model = "Camaro";
-  //   const year = "twenty twenty";
-  //   const errorExpected = { error: "Invalid year" };
+  it('should return error for wrong data type for year', () => {
+    // Arrange
+    const model = "Camaro";
+    const year = "twenty twenty";
+    const errorExpected = { error: "Invalid year" };
 
-  //   // Act
-  //   const result = calculateCarValue(model, year);
+    // Act
+    const result = calculateCarValue(model, year);
 
-  //   // Assert
-  //   expect(result).toEqual(errorExpected);
-  // });
+    // Assert
+    expect(result).toEqual(errorExpected);
+  });
 });
